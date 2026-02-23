@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🌍 Currency Converter</h1>
+
+    <div class="currency-container fade-in">
+      <select id="currency-first"></select>
+      <input type="number" id="worth-first" value="1" min="0" />
+    </div>
+
+    <div class="currency-container fade-in delay">
+      <select id="currency-second"></select>
+      <input type="number" id="worth-second" disabled />
+    </div>
+
+    <p class="exchange-rate fade-in delay2" id="exchange-rate">Loading exchange rate...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
